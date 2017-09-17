@@ -7,9 +7,9 @@ items:
   metadata:
     name: {{ .metadata.name }}
     labels:
-      broker-discovery: "yes"
+      app: "service-per-pod"
   spec:
-    host: {{ .metadata.name }}-{{ .metadata.namespace }}.192.168.99.100.xip.io
+    host: {{ .metadata.name }}-{{ .metadata.namespace }}.192.168.11.100.xip.io
     tls:
       termination: passthrough
     to:
