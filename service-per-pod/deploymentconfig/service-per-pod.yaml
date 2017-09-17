@@ -33,7 +33,7 @@ spec:
         deploymentconfig: service-per-pod
     spec:
       containers:
-      - image: 172.30.1.1:5000/myproject/service-per-pod@sha256:5d82ea67bdf28d06d2df9fe3276dab6adfee1294826bd369926d1b5c2d455117
+      - image: 172.30.1.1:5000/myproject/service-per-pod@sha256:c0b03f812220988487885832735f0dbdcdf57f6734edcf476dcb9653c6d58afa
         imagePullPolicy: Always
         name: service-per-pod
         ports:
