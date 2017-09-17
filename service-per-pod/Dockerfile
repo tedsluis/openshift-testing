@@ -2,8 +2,8 @@ FROM openshift/origin
 
 CMD oc login -u pod-watcher
 
-COPY watch-pod.sh /watch-pod.sh
+COPY watch-pods.sh /watch-pods.sh
 
 USER 1001
-ENTRYPOINT  ["/watch.sh"]
+ENTRYPOINT  ["/watch-pods.sh"]
 
