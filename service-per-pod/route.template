@@ -7,7 +7,7 @@ items:
   metadata:
     name: {{ .metadata.name }}
     labels:
-      "${LABEL-KEY}": "${LABEL_VALUE}"
+      "${LABEL_KEY}": "${LABEL_VALUE}"
       #app: "service-per-pod"
   spec:
     host: {{ .metadata.name }}-{{ .metadata.namespace }}.${WILDCARD_URL}
