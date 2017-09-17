@@ -7,9 +7,10 @@ items:
   metadata:
     name: {{ .metadata.name }}
     labels:
-      app: "service-per-pod"
+      "${LABEL-KEY}": "${LABEL_VALUE}"
+      #app: "service-per-pod"
   spec:
-    host: {{ .metadata.name }}-{{ .metadata.namespace }}.192.168.11.100.xip.io
+    host: {{ .metadata.name }}-{{ .metadata.namespace }}.${WILDCARD_URL}
     tls:
       termination: passthrough
     to:
